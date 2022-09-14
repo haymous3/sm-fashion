@@ -1,13 +1,30 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom'
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import { ProductProvider } from './contexts/product-contexts/product-contexts';
+import { ImageProvider } from './contexts/image-contexts/image-contexts';
+import { HeroProviders } from './contexts/heros-contexts/heros-contexts';
+import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <ImageProvider>
+        <ProductProvider>
+        <HeroProviders>
+        <App />
+        </HeroProviders>
+            
+        </ProductProvider>
+
+      </ImageProvider>
+      
+      
+    </BrowserRouter>
+   
   </React.StrictMode>
 );
 

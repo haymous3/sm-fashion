@@ -1,0 +1,39 @@
+.shop-directory{
+    display: flex;
+    background: #fff;
+    padding: 35px 55px;
+
+}
+
+.shop-cont{
+
+    .service-card{
+        width: 27%;
+        display: block;
+        padding: 15px 10px;
+        border: 0;
+        margin-top: 30px;
+
+        .service-card-img{
+            width: 100%;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .service-text{
+        background: #f2f2f4;
+        width: 100%;
+        text-align: center;
+        margin-top: -4px;
+    }
+
+    .service-card:hover{
+        background: #fff none repeat scroll 0 0;
+    box-shadow: 0 0 29px 0 rgb(0 0 0 / 15%);
+    transition: all 500ms ease 0s;
+    }
+    
+}

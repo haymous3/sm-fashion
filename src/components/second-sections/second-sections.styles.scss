@@ -1,0 +1,60 @@
+.sub-product{
+    display: flex;
+    justify-content: space-around;
+
+
+    .sub-container{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+
+
+   
+
+    
+
+    
+}
+
+.reverse{
+    display: flex;
+      flex-direction: row-reverse;  
+      
+      justify-content: space-around;
+      
+}
+
+.service{
+    display: flex;
+    justify-content: space-around;
+
+    > :nth-child(2){
+        display: none;
+    }
+
+    .sub-container{
+        width: 95%;
+    }
+}
+
+
+
+
+// .dark-banner:hover .box-content-dark:hover{
+//     opacity: 1;
+// }
+
+// .dark-banner:hover .box-content:hover{
+//     opacity: 1;
+// }
+
+// .dark-banner:hover .box-content:before:hover{
+//     opacity: 1;
+// }
+
+// .dark-banner:hover .dark-text:hover{
+//     opacity: 1;
+// }

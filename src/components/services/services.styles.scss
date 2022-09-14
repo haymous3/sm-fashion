@@ -1,0 +1,33 @@
+.service-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #F4F4F4;
+    padding: 40px 0px;
+    margin: 9em auto 0px;
+    width: 98%;
+}
+
+.footer{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+
+
+    .footer-card{
+        width: 23.5%;
+        padding: 0;
+    }
+}
+
+
+.shop-cont{
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    margin: 0;
+}
