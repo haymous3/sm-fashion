@@ -1,0 +1,32 @@
+
+
+.checkout-checkout{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #ccc;
+
+    div{
+        width: 39%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+         height: 137px;
+        border: 1px solid #ccc;
+        padding: 10px 0px;
+
+        img{
+            width: 50%;
+        }
+    }
+
+    .arrow{
+        display: flex;
+
+        span{
+            padding: 0px 9px;
+            cursor: pointer;
+        }
+    }
+}

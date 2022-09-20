@@ -3,7 +3,7 @@ import './services.styles.scss'
 
 
 const Services = ({product, footer, shop}) => {
-
+// console.log(product)
     return(
     
             <div className={`service-container ${footer} ${shop}`}>

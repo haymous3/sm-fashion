@@ -1,0 +1,23 @@
+
+.cart-item-container{
+    border: 1px solid #ccc;
+    width: 80%;
+    display: flex;
+    margin: 10px auto;
+    justify-content: space-around;
+    padding: 20px 30px;  
+
+
+
+    .cart-item-image{
+        width: 35%;
+
+        img{
+            width: 100%;
+        }
+    }
+    
+    h4{
+        font-size: 14px;
+    }
+}

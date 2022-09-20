@@ -1,5 +1,6 @@
 // import Images, { IMAGE_TYPES } from "../images/images.componnet";
-import { useContext } from 'react'
+import { useContext } from 'react';
+import Button from '../buttons/buttons.component';
 import { ImageContexts } from '../../contexts/image-contexts/image-contexts'             
 import './section-cards.styles.scss'
 
@@ -26,6 +27,8 @@ const hey = useContext(ImageContexts)
                 <div className="price">
                     <p>{price}</p>
                 </div>
+                <Button buttonTypes='addtocart'>Add To Cart</Button>
+
             
             </div>
         

@@ -1,0 +1,22 @@
+.checkout-directory{
+    background: #fff;
+    padding: 35px 55px;
+
+
+    .checkout-list{
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid #ccc;
+
+        span{
+            width: 25%;
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+    }
+
+    .check-out-total{
+        text-align: end;
+    }
+}

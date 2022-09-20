@@ -1,0 +1,35 @@
+.addtocart{
+    background: transparent;
+    border: 3px solid #fff;
+    border-radius: 40px;
+    width: 84%;
+    color: #fff;
+    font-size: 33px;
+    padding: 20px 10px;
+    :hover{
+        background-color: #fff;
+        color: rgba(201, 44, 97, 0.55);
+    }
+
+}
+
+
+// button
+// }
+
+.checkout{
+    background: #c92c61 none repeat scroll 0 0;
+    color: #fff;
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 15px;
+    border: #c92c61;
+    width: 100%;
+
+    :hover{
+        border: #c92c61;
+        background: #fff;
+    }
+}
+

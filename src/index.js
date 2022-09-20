@@ -4,25 +4,25 @@ import ReactDOM from 'react-dom/client';
 import { ProductProvider } from './contexts/product-contexts/product-contexts';
 import { ImageProvider } from './contexts/image-contexts/image-contexts';
 import { HeroProviders } from './contexts/heros-contexts/heros-contexts';
-import './index.scss';
+import { CartProvider } from './contexts/cart-contexts/cart-contexts';
+import './index.scss'; 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ImageProvider>
-        <ProductProvider>
-        <HeroProviders>
-        <App />
-        </HeroProviders>
-            
-        </ProductProvider>
-
-      </ImageProvider>
-      
-      
+      <ProductProvider>
+        <ImageProvider>
+          <HeroProviders>
+            <CartProvider>
+              <App />
+            </CartProvider>
+          </HeroProviders>    
+        </ImageProvider>
+      </ProductProvider> 
     </BrowserRouter>
    
   </React.StrictMode>
