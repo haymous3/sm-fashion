@@ -11,7 +11,13 @@
         line-height: 27px;
         margin: 0;
         text-transform: uppercase;
+
+   
     }
+
+  
+
+
 
     p{
         color: #727272;
@@ -26,17 +32,20 @@
        
     }
 
-    ::after{
-        background: rgba(0, 0, 0, 0) url(../../assets/images/news.webp) no-repeat scroll 0 0;
-        content: "";
-        display: block;
-        height: 60px;
-        left: 30%;
-        position: absolute;
-        top: 30px;
-        width: 600px;
-    }
+         
 
+
+}
+
+.news-title p::after{
+    background: rgba(0, 0, 0, 0) url(../../assets/images/news.webp) no-repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 60px;
+    left: 30%;
+    position: absolute;
+    top: 30px;
+    width: 600px;
 }
 
 .news-subscribe{

@@ -1,4 +1,6 @@
-import { createContext, useState, useEffect } from "react";
+import { createContext, useState, useEffect, useContext } from "react";
+import { UserContexts } from "../user-contexts/user-contexts.component";
+
 
 // creating a helper function to help us add item to our cart
 
@@ -62,7 +64,7 @@ export const CartProvider = ({children}) => {
     const [totalprice, setTotalPrice] = useState(0)
 
     console.log(cartItems)
-
+    const {currentUsers} = useContext(UserContexts)
     useEffect(() => {
       const totalQuantity = cartItems.reduce((start, finish) => {
         return start + finish.quantity
@@ -79,6 +81,12 @@ export const CartProvider = ({children}) => {
 
       setTotalPrice(totalCartPrice)
     }, [cartItems])
+
+    useEffect(() => {
+     if(currentUsers === null){
+      setCartItems([])
+     }
+    }, [currentUsers])
 
  
 

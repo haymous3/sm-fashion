@@ -1,0 +1,28 @@
+.nav-dropdown{
+    height: 100vh;
+    z-index: 9999;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.85) none repeat scroll 0 0;
+    color: white;
+
+    svg{
+        font-size: 51px;
+        text-align: center;
+        display: flex;
+        margin-inline-start: auto;
+        padding: 10px 67px;
+    }
+
+    .navs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+
+        a{
+            padding: 0px 30px;
+        }
+    }
+}

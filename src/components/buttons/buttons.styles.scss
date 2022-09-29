@@ -33,3 +33,30 @@
     }
 }
 
+.signup{
+    border: 1px solid;
+    /* border: black; */
+    padding: 20px 0;
+    display: block;
+    width: 178px;
+    background: white;
+    font-size: 15px;
+
+
+    .signup:hover{
+        background: #c92c61 none repeat scroll 0 0;
+        color: #fff;
+    }
+}
+
+
+.google{
+    border: 1px solid #c92c61;
+    background:  #c92c61 none repeat scroll 0 0;
+    font-size: 15px;
+ color: #fff;
+   
+    padding: 20px 20px;
+   
+}
+

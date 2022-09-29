@@ -1,4 +1,5 @@
 import {useContext} from 'react';
+import Navigations from '../../components/nav/nav.component';
 import { ProductContexts } from '../../contexts/product-contexts/product-contexts';
 import { ImageContexts } from '../../contexts/image-contexts/image-contexts';
 import { HeroContexts } from "../../contexts/heros-contexts/heros-contexts";
@@ -16,6 +17,7 @@ const HomePage = () => {
     const {firstProduct, secondProduct, thirdProduct, fourthProduct, serviceDetails,footerDetails } = useContext(ProductContexts)
     const {sectionbanner, women, jean, bata} = useContext(ImageContexts)
     const {footerdetails} = useContext(HeroContexts)
+
     
 
     // console.log(sectionbanner)
@@ -25,7 +27,7 @@ const HomePage = () => {
 
     return(
         <div>
-          
+            <Navigations navlinks={[]} general='homenav'/>
             <Hero/>
             <SubProduct product={firstProduct} images={sectionbanner}/>
             <SubProduct product={secondProduct} rowreverse='reverse' images={women}/>
