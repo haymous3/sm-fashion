@@ -1,23 +1,19 @@
-import { useContext } from "react";
-import { HeroContexts } from "../../contexts/heros-contexts/heros-contexts";
-import { ProductContexts } from "../../contexts/product-contexts/product-contexts";
+import GeneralTemplate from "../../components/general-template/general-template.component";
 import CheckOutDirectory from "../../components/checkoutdirectory/checkoutdirectory.component";
-import Services from "../../components/services/services.component";
-import FooterHero from "../../components/footer-hero/footer-hero.component";
+
 import './checkout.styles.scss'
 
 const CheckOut = () => {
-    const {footerdetails} = useContext(HeroContexts)
-    const {serviceDetails,footerDetails } = useContext(ProductContexts)
+    
 
     return(
-    
-       <div className="checkout-page">
+    <GeneralTemplate>
+        <div className="checkout-page">
             <CheckOutDirectory/>
-            <Services product={serviceDetails}></Services>
-            <FooterHero footer={footerdetails}/>
-            <Services product={footerDetails} footer='footer'></Services>
-       </div>
+        </div>
+    
+    </GeneralTemplate>
+      
       
        
     )

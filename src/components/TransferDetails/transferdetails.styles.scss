@@ -1,0 +1,66 @@
+.transfare-wallet{
+    position: absolute;
+    width: 80%;
+    background-color: #fff;
+    height: 40em;
+    transition: all ease 0.5s;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+
+
+    .wallet-head{
+        display: flex;
+        justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 3px solid #EEE;
+        align-items: center;
+        padding: 10px 45px;
+
+
+        svg{
+            font-size: 35px;
+        }
+
+        h2{
+            font-size: 20px;
+        }
+    }
+
+
+    .account-details{
+        text-align: center;
+        line-height: 29px;
+
+        span{
+            font-weight: 700;
+            font-size: 14px;
+        }
+    }
+
+    .wallet-details-input{
+        border: 2px solid #eee;
+    padding: 10px 0px 30px;
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+
+    form > div > input{
+        width: 540px;
+    }
+
+    form p{
+        font-weight: 700;
+    }
+
+    form button{
+        
+    margin: 32px 0px 0px;
+    padding: 10px 20px;
+    border: 1px solid #c92c61;
+    background: #c92c61 none repeat scroll 0 0;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 6px;
+    }
+    }
+}

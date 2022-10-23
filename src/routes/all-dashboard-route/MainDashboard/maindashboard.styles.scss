@@ -1,0 +1,15 @@
+.main-dashboard{
+
+    width: 74%;
+
+    .each-card{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .bar-chart{
+        margin: 5em auto;
+        width: 850px;
+    }
+
+}

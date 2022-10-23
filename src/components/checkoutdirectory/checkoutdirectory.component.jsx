@@ -5,6 +5,7 @@ import {useNavigate} from "react-router-dom"
 import Button from '../buttons/buttons.component'
 import { CartContexts } from '../../contexts/cart-contexts/cart-contexts'
 import GENERALDIRECTORY from "../general-directory/general-directory.componet";
+import TableHeadingDirectory from "../table-heading-directory/table-heading-directory.component";
 import './checkoutdirectory.styles.scss'
 
 const CheckOutDirectory = () => {
@@ -20,25 +21,9 @@ const CheckOutDirectory = () => {
     return(
         <GENERALDIRECTORY>
             <h2>CHECKOUT</h2>
-            <div className='checkout-list'>
-                <span>
-                    IMAGE
-                </span>
-                <span>
-                    PRODUCT
-                </span>
-                <span>
-                    PRICE
-                </span>
-                <span>
-                    QUANTITY
-                </span>
-                <span>
-                    REMOVE
-                </span>
-            </div>
-            { currentUsers ?
-                cartItems.map((item) => <CheckOutItem key={item.id} checkitem={item}></CheckOutItem>) : null
+           <TableHeadingDirectory tablestyle='horizontal'/>
+            {
+                cartItems.map((item) => <CheckOutItem key={item.id} checkitem={item}></CheckOutItem>) 
             }
             <div className='check-out-total'>
                 <h2>CART TOTAL</h2>

@@ -1,31 +1,37 @@
+
+import {faCodeCompare} from '@fortawesome/free-solid-svg-icons'
 export const FirstProduct = [
     {
        'id': 1,
        'name':'FADED SHORT SLEEVE T-SHIRT',
        'brand': 'Dolce && Gabbana',
        'price': 18.8,
-       image: 'bag'
+       image: 'bag',
+       
     },
     {
        'id': 2,
        'name':'FADED SHORT SLEEVE T-SHIRT',
        'brand': 'Dolce && Gabbana',
        'price': 18.8,
-       image: 'shoe'
+       image: 'shoe',
+     
     },
     {
        'id': 3,
        'name':'FADED SHORT SLEEVE T-SHIRT',
        'brand': 'Dolce && Gabbana',
        'price': 18.8,
-       image: 'glasses'
+       image: 'glasses',
+
     },
     {
        'id': 4,
        'name':'FADED SHORT SLEEVE T-SHIRT',
        'brand': 'Dolce && Gabbana',
        'price': 18.8,
-       image: 'browbag'
+       image: 'browbag',
+    
     },
    
    
@@ -191,28 +197,32 @@ export const AllProduct = [
       'name':'FADED SHORT SLEEVE T-SHIRT',
       'brand': 'Dolce && Gabbana',
       'price': 18.8,
-      image: 'bag'
+      image: 'bag',
+      icons:faCodeCompare
    },
    {
       'id': 2,
-      'name':'FADED SHORT SLEEVE T-SHIRT',
-      'brand': 'Dolce && Gabbana',
+      'name':'BURBREEY',
+      'brand': 'Nike',
       'price': 18.8,
-      image: 'shoe'
+      image: 'shoe',
+      icons:faCodeCompare
    },
    {
       'id': 3,
       'name':'FADED SHORT SLEEVE T-SHIRT',
       'brand': 'Dolce && Gabbana',
       'price': 18.8,
-      image: 'glasses'
+      image: 'glasses',
+      icons:faCodeCompare
    },
    {
       'id': 4,
       'name':'FADED SHORT SLEEVE T-SHIRT',
       'brand': 'Dolce && Gabbana',
       'price': 18.8,
-      image: 'browbag'
+      image: 'browbag',
+      icons:faCodeCompare
    },
 
    {
@@ -220,35 +230,40 @@ export const AllProduct = [
       'name':'FADED SHORT SLEEVE T-SHIRT',
       'brand': 'Dolce && Gabbana',
       'price': 18.8,
-      image: 'jacket'
+      image: 'jacket',
+      icons:faCodeCompare
    },
    {
       'id': 6,
       'name':'FADED SHORT SLEEVE T-SHIRT',
       'brand': 'Dolce && Gabbana',
       'price': 18.8,
-      image: 'browbag'
+      image: 'browbag',
+      icons:faCodeCompare
    },
    {
       'id': 7,
       'name':'FADED SHORT SLEEVE T-SHIRT',
       'brand': 'Dolce && Gabbana',
       'price': 18.8,
-      image: 'glasses'
+      image: 'glasses',
+      icons:faCodeCompare
    },
    {
       'id': 8,
       'name':'FADED SHORT SLEEVE T-SHIRT',
       'brand': 'Dolce && Gabbana',
       'price': 18.8,
-      image: 'shoe'
+      image: 'shoe',
+      icons:faCodeCompare
    },
    {
       'id': 9,
       'name':'FADED SHORT SLEEVE T-SHIRT',
       'brand': 'Dolce && Gabbana',
       'price': 18.8,
-      image: 'bag'
+      image: 'bag',
+      icons:faCodeCompare
    },
 
 ]

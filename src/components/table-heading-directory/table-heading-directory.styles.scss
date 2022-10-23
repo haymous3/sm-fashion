@@ -1,0 +1,51 @@
+.horizontal{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #ccc;
+    width: 100%;
+    span{
+        width: 25%;
+        text-align: center;
+        border: 1px solid #ccc;
+        padding: 20px;
+    }
+}
+
+.vertical{
+    display: block;
+    width: 30%;
+    :first-child{
+        height: 48%;
+    }
+   
+
+    :last-child{
+        display: none;
+    }
+
+    span{
+        width: 80%;
+        display: block;
+        text-align: center;
+        border: 1px solid #ccc;
+        padding: 20px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+
+
+
+.clear-btnn{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+
+    button{
+        padding: 10px 20px;
+        background-color: #c92c61;
+        border: 1px solid #c92c61;
+        color: #fff;
+    }
+}
+

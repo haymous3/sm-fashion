@@ -1,0 +1,26 @@
+.each-links {
+    a{
+        padding: 10px 15px;
+        transition: all ease .3s;
+        margin-left: 10px;
+    }
+   
+    a:hover{
+        background-color: #000;
+        padding: 10px 30px;
+        width: 30px;
+        width: inherit;
+        color: white;
+        margin-left: 10px;
+       
+    }
+    a:focus{
+        background-color: #000;
+        color: #fff;
+        margin-left: 10px;
+    }
+
+   
+   
+
+}

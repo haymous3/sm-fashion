@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect } from "react";
-import { authListeners, createUserProfile, getUserData } from "../../utlities/firebase/firebase";
+import { authListeners, createUserProfile, getUserData, updateUserProfiles } from "../../utlities/firebase/firebase";
 
 
 export const UserContexts = createContext({
@@ -20,6 +20,7 @@ export const UserProviders = ({children}) => {
         const unSucbribe = authListeners((user) => {
             if(user){
                 createUserProfile(user)
+                 updateUserProfiles(user.displayName)
                 
             }
             console.log(user)
@@ -29,17 +30,19 @@ export const UserProviders = ({children}) => {
         } )
 
         return unSucbribe
-    }, [])
+    }, [currentUsers])
 
     useEffect(() => {
         const userdata = async() => {
             const theData = await getUserData(currentUsers)
-            console.log(theData)
+            // console.log(theData)
             setUserDetails(theData)
         }
 
         userdata()
     }, [currentUsers])
+
+   
 
     const value = {currentUsers, setCurrentUsers, userDetails}
 

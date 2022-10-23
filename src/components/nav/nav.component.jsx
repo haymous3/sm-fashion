@@ -1,7 +1,8 @@
 import { Fragment, useContext } from "react";
 // import { Link } from "react-router-dom";
-import { UserContexts, } from "../../contexts/user-contexts/user-contexts.component";
+import { UserContexts } from "../../contexts/user-contexts/user-contexts.component";
 import { LogOut } from "../../utlities/firebase/firebase";
+import { checkProvider } from "../../utlities/firebase/firebase";
 import CartDropDown from '../cart-dropdown/cart-dropdown.component'
 import NavDropDown from "../nav-dropdown/nav-dropdown.component";
 import BodyBg from "../body-bg/body-bg.component";
@@ -22,10 +23,16 @@ export const GENERAL_NAV = {
 const Navigations = ({navlinks, general}) => {
     const {isCartOpen, setIsCartOpen, quantity} = useContext(CartContexts)
     const {isNavOpen, setIsNavOpen} = useContext(NavContents)
-    const {currentUsers,setCurrentUsers} = useContext(UserContexts)
+    const {currentUsers,setCurrentUsers, userDetails} = useContext(UserContexts)
+    
+    
     
   
-  
+  console.log(userDetails)
+  console.log(currentUsers)
+ if(checkProvider() ==='google.com'){
+    console.log('yes')
+ }
   const signOut = () => {
     
     LogOut();
@@ -51,6 +58,10 @@ const Navigations = ({navlinks, general}) => {
   const toAuth = () => {
     navigation('/auth')
   }
+
+  const todashboard = () => {
+    navigation('/dashboard')
+  }
    
     const openNav = () => setIsNavOpen(!isNavOpen)
     const displayCart = () => setIsCartOpen(!isCartOpen)
@@ -75,9 +86,9 @@ const Navigations = ({navlinks, general}) => {
                 }
                 <div className="nav-details">
                    {currentUsers ? 
-                    <span className="welcome">Hi {currentUsers.displayName || currentUsers.name}</span>  : null}
+                    <span className="welcome"> {  currentUsers.displayName  }</span>  : null}
                     {currentUsers ? 
-                        <Button to='dashbord' buttonTypes='google'>My Dashboard</Button>  : null}
+                        <Button func={todashboard} buttonTypes='google'>My Dashboard</Button>  : null}
                         {currentUsers ? 
                             <Button to='dashbord' buttonTypes='signup' func={signOut}>LogOut</Button>  : <button className='try' onClick={toAuth}>Log IN</button>}
                     <FontAwesomeIcon className="iccon" icon={faCartShopping} onClick={displayCart}/>
@@ -85,10 +96,11 @@ const Navigations = ({navlinks, general}) => {
                          <span className="nav-quanties">{quantity}</span> 
                     }
                    
-                    {
-                        isCartOpen && <CartDropDown/>
-                    }
+                   
                 </div>
+                {
+                    isCartOpen && <CartDropDown/>
+                }
                
                 
             

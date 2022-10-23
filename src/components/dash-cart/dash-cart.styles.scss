@@ -1,0 +1,58 @@
+.cart-table{
+    width: 100%;
+
+
+    table{
+        width: 100%;
+        border: 1px solid #000;
+        text-align: center;
+        line-height: 45px;
+
+        thead tr th{
+            border: 1px solid;
+            // background-color:  #000;
+            // color: #fff;
+        }
+        tr td {
+            border: 1px solid;
+        }
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        
+    }
+
+    .search-input{
+        
+        display: flex;
+        justify-content: flex-end;
+        
+        margin-bottom: 12px;
+
+        input{
+            width: 310px;
+            height: 34px;
+            border-radius: 5px;
+            padding-left: 15px;
+        }
+    }
+
+    .table-button{
+        width: 15%;
+        display: flex;
+        margin-top: 20px;
+        margin-inline-start: auto;
+        justify-content: flex-end;
+
+        button{
+            width: 100%;
+            border: 1px solid #c92c61;
+            background-color: #c92c61;
+            color: #fff;
+            text-align: center;
+            line-height: 45px;
+        }
+    }
+
+   
+}

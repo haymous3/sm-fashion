@@ -2,11 +2,15 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom'
 import ReactDOM from 'react-dom/client';
 import { UserProviders } from './contexts/user-contexts/user-contexts.component';
+import { PaymentDetailsContexts } from './contexts/payment-contexts/payment-contexts.component';
 import { ProductProvider } from './contexts/product-contexts/product-contexts';
 import { NavProvider } from './contexts/nav-contexts/nav-contents';
 import { ImageProvider } from './contexts/image-contexts/image-contexts';
 import { HeroProviders } from './contexts/heros-contexts/heros-contexts';
 import { CartProvider } from './contexts/cart-contexts/cart-contexts';
+import { MainDashBoardDetailsProvider } from './contexts/cart-card/cart-card.component';
+import { CompareProvider } from './contexts/compare-contexts/compare-context.component';
+import { WalletDetailsProvider } from './contexts/wallet-contects/wallet-context.component';
 import './index.scss'; 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -17,19 +21,31 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
     <UserProviders>
-
+    <PaymentDetailsContexts>
+   
       <NavProvider>
+     
       <ProductProvider>
         <ImageProvider>
           <HeroProviders>
-            <CartProvider>
-              <App />
+          <CartProvider>
+          <CompareProvider>
+          <MainDashBoardDetailsProvider>
+          <WalletDetailsProvider>
+          
+
+          <App />  
+         
+          </WalletDetailsProvider> 
+          </MainDashBoardDetailsProvider> 
+          </CompareProvider>
             </CartProvider>
           </HeroProviders>    
         </ImageProvider>
       </ProductProvider> 
+     
     </NavProvider>
-    
+    </PaymentDetailsContexts>
     </UserProviders>
     </BrowserRouter>
    

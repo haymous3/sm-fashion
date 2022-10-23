@@ -1,0 +1,33 @@
+
+.compare-items {
+    width: 48%;
+    img{
+        width: 94%;
+    }
+    p{
+        text-align: center;
+        border: 1px solid #ccc;
+        height: 57.8px;
+        justify-content: center;
+        display: flex;
+        top: -3px;
+        position: relative;
+        align-items: center;
+        margin: 0;
+        /* margin-top: -8px; */
+        width: 93.5%;
+    }
+
+    .compare-btn{
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+
+        button{
+            padding: 10px 20px;
+            background-color: #c92c61;
+            color: #fff;
+            border: 1px solid #c92c61;
+        }
+    }
+}

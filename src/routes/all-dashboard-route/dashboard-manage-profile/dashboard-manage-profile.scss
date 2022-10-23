@@ -1,0 +1,41 @@
+.profile-form{
+    width: 70%;
+    border: 2px solid #eee;
+    line-height: 4em;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+
+    .form-options{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        p{
+            
+            width: 13%;
+            font-size: 13px;
+            font-weight: 700;
+ 
+        }
+        input{
+            border: 2px solid #eee;
+            width: 575px;
+        }
+    }
+
+    .update-button{
+       
+    margin: 0 auto;
+    text-align: end;
+    margin-right: 70px;
+
+    button{
+        padding: 10px 20px;
+           border: 1px solid #c92c61;
+    background: #c92c61 none repeat scroll 0 0;
+    font-size: 15px;
+    color: #fff;
+    }
+    }
+}
+

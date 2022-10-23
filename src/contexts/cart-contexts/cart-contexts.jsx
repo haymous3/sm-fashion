@@ -11,7 +11,7 @@ const addToCart = (cartitems, product) => {
     return cartitems.map((item) => item.id === product.id ? 
     {...item, quantity : item.quantity + 1}: item )
   }
-
+alert('Added to cart')
 return [...cartitems, {...product, quantity: 1}]
 }
 
@@ -52,7 +52,8 @@ export const CartContexts = createContext({
     decreaseProducts:() => {},
     clearProducts: () => {},
     totalprice: 0,
-    setTotalPrice: () => {}
+    setTotalPrice: () => {},
+    clearAllCart: () => {}
 
 })
 
@@ -63,7 +64,7 @@ export const CartProvider = ({children}) => {
     const [quantity, setQuantity] = useState(0)
     const [totalprice, setTotalPrice] = useState(0)
 
-    console.log(cartItems)
+ 
     const {currentUsers} = useContext(UserContexts)
     useEffect(() => {
       const totalQuantity = cartItems.reduce((start, finish) => {
@@ -89,7 +90,7 @@ export const CartProvider = ({children}) => {
     }, [currentUsers])
 
  
-
+    
 
     
     const addToMyCart = (product) => {
@@ -108,9 +109,10 @@ export const CartProvider = ({children}) => {
     const clearProducts =(product) => {
       setCartItems(clearProduct(cartItems, product))
     }
-
-      
-    const value ={isCartOpen, setIsCartOpen, cartItems, addToMyCart, quantity, increaseProducts,decreaseProducts,clearProducts,totalprice}
+    const clearAllCart = () => setCartItems([])
+    
+    console.log(cartItems)
+    const value ={isCartOpen, setIsCartOpen, cartItems, addToMyCart, quantity, increaseProducts,decreaseProducts,clearProducts,totalprice, clearAllCart}
 
 
 

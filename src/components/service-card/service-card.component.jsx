@@ -1,6 +1,8 @@
 import {useContext} from 'react'
 import { ImageContexts } from '../../contexts/image-contexts/image-contexts'
 import { CartContexts } from '../../contexts/cart-contexts/cart-contexts'
+import { CompareContext } from '../../contexts/compare-contexts/compare-context.component'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 // import { ProductContexts } from '../../contexts/product-contexts/product-contexts'
 import Button from '../buttons/buttons.component'
 import './service-card.styles.scss'
@@ -15,18 +17,19 @@ export const Card_STYLE = {
 
 const ServiceCard = ({services}) => {
     // console.log(services)
-    const {name, image, text} = services
+    const {name, image, text, icons} = services
 
     const hey = useContext(ImageContexts)
     const { addToMyCart } = useContext(CartContexts)
+    const { addCompareList } = useContext(CompareContext)
 
     const clickToAdd = () => addToMyCart(services)
-  
+    const clicKToCompare = () => addCompareList(services)
+      
+        
 
-  
-
-    
-
+        
+        
     
 
     // const {allProduct} = useContext(ProductContexts)
@@ -38,6 +41,8 @@ const ServiceCard = ({services}) => {
 
     return(
         <div className='service-card footer-card'>
+                <FontAwesomeIcon icon={icons} onClick={clicKToCompare}/>
+           
             <div className='service-card-img'>
                 <img src={`${hey[image]}`} alt="img"/>
             </div>

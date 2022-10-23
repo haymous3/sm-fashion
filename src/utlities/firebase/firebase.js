@@ -1,7 +1,7 @@
 
 import { initializeApp } from "firebase/app";
-import {getAuth,signInWithPopup, GoogleAuthProvider, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged, signOut} from "firebase/auth";
-import {doc, getDoc, setDoc, getFirestore, query, getDocs, collection} from "firebase/firestore";
+import {getAuth,signInWithPopup, GoogleAuthProvider, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged, signOut, updatePassword, updateProfile} from "firebase/auth";
+import {doc, getDoc, setDoc,  getFirestore, updateDoc, arrayUnion} from "firebase/firestore";
 
 
 const firebaseConfig = {
@@ -51,10 +51,40 @@ export const CreateUserWithEmailAndPassword = async (email, password) => {
 return await createUserWithEmailAndPassword(auth, email, password)
 }
 
+export const getUserData = async (userUid) => {
+
+  //   const collectionref = collection(db, 'users');
+  
+  //   const q = query(collectionref);
+  
+  //   const querySnapShot = await getDocs(q)
+  
+  //   const docSnapShot = querySnapShot.docs
+  //  const theData = docSnapShot.map((data) => {return data.data()})
+  
+  //  return theData
+  
+  
+  const refernceDoc = doc(db, 'users', userUid.uid)
+  
+    const snapshot = await getDoc(refernceDoc)
+    try{
+      const theData = snapshot.data()
+  
+      return theData
+  
+    }catch(error){
+      console.log(error.message)
+    }
+    
+  
+  }
+  
+
 // after signin in, this is the function for creating and storing our user details
 
 
-export const createUserProfile =  async (userUid, otherParameters) => {
+export const createUserProfile =  async (userUid, otherParameters,p, a,c ,d) => {
   if(!userUid) return;
 
 
@@ -67,7 +97,7 @@ export const createUserProfile =  async (userUid, otherParameters) => {
 
 
   if(!snapshot.exists()){
-    const {displayName, email, photoURL } = userUid;
+    const {displayName, email, photoURL} = userUid;
     const date = new Date()
 
     try{
@@ -81,10 +111,133 @@ export const createUserProfile =  async (userUid, otherParameters) => {
     }catch(error){
       console.log(error)
     }
+  }if(snapshot.exists()){
+    // const {displayName} = userUid;
+    const date = new Date()
+
+    try{
+     await updateDoc(refernceDoc, {
+      phone_Number: p,
+    displayName : a,
+    password: c,
+    confirm: d,
+        date,
+        ...otherParameters
+      })
+    }catch(error){
+      console.log(error)
+    }
   }
+ return refernceDoc
+} 
+
+// updating the user password
+
+export const UpdateUserPassword = async(example) => {
+
+  try {
+   await updatePassword(auth.currentUser, example)
+  } catch (error) {
+    console.log(error.message)
+  }
+
+}
+
+// updating user profile
+
+export const updateUserProfiles = async(a, ...otherParameters) => {
+  
+  try {
+    await updateProfile(auth.currentUser, {
+   displayName: a,
+   ...otherParameters
+      
+    })
+  } catch (error) {
+    console.log(error.message)
+  }
+}
+
+
+
+//checking for the provider 
+export const checkProvider = () => {
+  let result;
+  if (auth.currentUser !== null) {
+    auth.currentUser.providerData.forEach((profile) => {
+       result = profile.providerId
+    });
+  }
+  console.log(result)
+  return result
+}
+
+
+
+// creating the payment details for all users
+
+export const createPaymentProfile =  async (userUid, otherParameters, newpara) => {
+
+  if(!userUid) return;
+
+  
+  const refernceDoc = doc(db, 'payments', userUid)
+  console.log(refernceDoc)
+  const snapshot = await getDoc(refernceDoc)
+  
+  if(!snapshot.exists()){
+ 
+    try{
+     await setDoc(refernceDoc, 
+      {hey: [otherParameters]}
+     
+       
+      )
+    }catch(error){
+      console.log(error)
+    }
+
+    
+  } 
+   if(snapshot.exists() === true){
+ 
+      try{
+       await updateDoc(refernceDoc, 
+        {hey: arrayUnion(otherParameters)}
+       
+         
+        )
+      }catch(error){
+        console.log(error)
+      }
+      
+    }  
+  
 
  return refernceDoc
 } 
+
+// get payment details
+
+export const getPayementDetails = async (userUid) => {
+
+  const reference = doc(db, 'payments', userUid)
+
+  const paymentSnapShot = await getDoc(reference);
+
+ 
+
+  try {
+    const thePaymentDetails = paymentSnapShot.data()
+    console.log(thePaymentDetails)
+    return thePaymentDetails;
+  } catch (error) {
+    console.log(error.message)
+  }
+
+ 
+}
+
 
 // for logging out
 
@@ -103,26 +256,3 @@ export const authListeners = (callback) => {
 // getting the userdata from our database
 
 
-export const getUserData = async (userUid) => {
-
-//   const collectionref = collection(db, 'users');
-
-//   const q = query(collectionref);
-
-//   const querySnapShot = await getDocs(q)
-
-//   const docSnapShot = querySnapShot.docs
-//  const theData = docSnapShot.map((data) => {return data.data()})
-
-//  return theData
-
-
-const refernceDoc = doc(db, 'users', userUid.uid)
-
-  const snapshot = await getDoc(refernceDoc)
-
-  const theData = snapshot.data()
-
-  return theData
-
-}

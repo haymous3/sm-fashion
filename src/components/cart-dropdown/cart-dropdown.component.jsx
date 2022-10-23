@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { UserContexts } from '../../contexts/user-contexts/user-contexts.component'; 
+// import { UserContexts } from '../../contexts/user-contexts/user-contexts.component'; 
 import { CartContexts } from '../../contexts/cart-contexts/cart-contexts';
 import CartItem from '../cart-items/cart-items.component';
 import Button from '../buttons/buttons.component';
@@ -8,7 +8,7 @@ import './cart-dropdown.styles.scss'
 
 const CartDropDown = () => {
     const {cartItems} = useContext(CartContexts);
-    const {currentUsers} = useContext(UserContexts)
+    // const {currentUsers} = useContext(UserContexts)
 
 
     const navigate =  useNavigate()
@@ -23,8 +23,8 @@ const CartDropDown = () => {
         
         <div className="cart-dropdown"> 
               
-        { currentUsers ?
-              cartItems.map((item) => <CartItem key={item.id} cartitem={item}></CartItem>) : null
+        { 
+              cartItems.map((item) => <CartItem key={item.id} cartitem={item}></CartItem>) 
         }
            
            <Button buttonTypes='checkout' func={goToNavigate}>Go TO CHECKOUT</Button>

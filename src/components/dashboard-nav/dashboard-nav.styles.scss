@@ -1,0 +1,49 @@
+.dashboard-content{
+    display: flex;
+  gap: 4em;
+    padding: 65px 66px 10px;
+
+
+    .dash-links{
+        line-height: 55px;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: left;
+        padding-left: 35px;
+    }
+
+    .user-details{
+        width: 20%;
+        text-align: center;
+        // border: 1px solid #eee;
+        // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: #F4F4F4;
+        height: 35em;
+    }
+
+    .user-name{
+        padding: 20px;
+        line-height: 38px;
+        border-bottom: 5px solid #000
+
+      
+
+    }
+
+    .userdetail-name{
+        font-weight: 800;
+    }
+
+    .users{
+        font-size: 42px;
+        border: 1px solid;
+        width: 31%;
+        border-radius: 50%;
+        padding: 20px 0px;
+    }
+
+    .userdetail-email{
+        font-size: 15px;
+    }
+}

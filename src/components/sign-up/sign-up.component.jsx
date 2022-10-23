@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CreateUserWithEmailAndPassword, createUserProfile } from "../../utlities/firebase/firebase";
+import { CreateUserWithEmailAndPassword, createUserProfile, updateUserProfiles } from "../../utlities/firebase/firebase";
 import FormInput from "../form-inputs/form-input.component";
 import Button from "../buttons/buttons.component";
 import { useNavigate } from "react-router-dom";
@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
     const SignUpDetails = {
-        name: '',
+        displayName: '',
         email: '',
         password:'',
         confirmPassword: ''
@@ -16,7 +16,7 @@ const SignUp = () => {
     }
     const [formfields, setformfield] = useState(SignUpDetails)
 
-const {name, email, password, confirmPassword} = formfields
+const {displayName, email, password, confirmPassword} = formfields
 
     const navigate = useNavigate();
 
@@ -50,13 +50,18 @@ const {name, email, password, confirmPassword} = formfields
 
           console.log(user)
 
-          await createUserProfile(user)
+          await createUserProfile(user, formfields)
+          await updateUserProfiles(displayName)
 
           alert('Account registered succesfully')
 
-          navigate('/')
+          
 
             resetfiled()
+
+            navigate('/')
+           
+          
 
         }catch(error){
             alert(error.message)
@@ -75,10 +80,10 @@ const {name, email, password, confirmPassword} = formfields
             <form onSubmit={handleSubmit}>
                 <FormInput
                     type='text'
-                    value={name}
+                    value={displayName}
                     changeHandler={handlerChange}
                     placeholder='Enter your Name'
-                    name='name'>
+                    name='displayName'>
                 </FormInput>
                 <FormInput
                     type='email'
