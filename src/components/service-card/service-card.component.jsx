@@ -12,7 +12,7 @@ export const Card_STYLE = {
     servicecard: 'servicecard'
 } 
 
-
+// <FontAwesomeIcon icon={icons} onClick={clicKToCompare}/>
 
 
 const ServiceCard = ({services}) => {
@@ -41,7 +41,7 @@ const ServiceCard = ({services}) => {
 
     return(
         <div className='service-card footer-card'>
-                <FontAwesomeIcon icon={icons} onClick={clicKToCompare}/>
+               
            
             <div className='service-card-img'>
                 <img src={`${hey[image]}`} alt="img"/>

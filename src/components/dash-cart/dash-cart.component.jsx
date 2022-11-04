@@ -7,7 +7,7 @@ import './dash-cart.styles.scss'
 
 
 
-const DashCart = () => {
+const  DashCart = () => {
                 
     const {cartItems, clearAllCart} = useContext(CartContexts)
     const [newCartItems, setNewCartItem] = useState(cartItems)

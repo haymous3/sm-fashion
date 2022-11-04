@@ -1,12 +1,12 @@
 import { useContext } from "react";
-import GeneralTemplate from "../../components/general-template/general-template.component";
+import GeneralTemplate from "../general-template/general-template.component";
 import { HeroContexts } from "../../contexts/heros-contexts/heros-contexts";
-import FooterHero from "../../components/footer-hero/footer-hero.component";
-import ShopDirectory from "../../components/shop-directory/shop-directory.component";
+import FooterHero from "../footer-hero/footer-hero.component";
+// import ShopDirectory from "../shop-directory/shop-directory.component";
 
 import './shop.styles.scss'
 
-const Shop = () => {
+const Shop = ({children}) => {
 
     const {shopherodetails} = useContext(HeroContexts)
    
@@ -17,7 +17,7 @@ const Shop = () => {
             <div className="shop-inner-content">
                 
                 <FooterHero footer={shopherodetails}/>
-                <ShopDirectory/>
+                {children}
 
             </div>
         </GeneralTemplate>

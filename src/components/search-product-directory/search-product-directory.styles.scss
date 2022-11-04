@@ -1,0 +1,17 @@
+.looking-for{
+display: flex;
+gap: 3em;
+background-color: #eee;
+padding: 30px 40px;
+color: #000;
+border-radius: 10px;
+
+    input{
+        width: 50em;
+        height: 4em;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    
+}

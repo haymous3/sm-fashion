@@ -1,21 +1,29 @@
-import { useContext } from "react";
-import { ProductContexts } from "../../contexts/product-contexts/product-contexts";
+// import { useContext } from "react";
+// import { ProductContexts } from "../../contexts/product-contexts/product-contexts";
 import Services from "../services/services.component"
-import ViewedProduct from "../viewed-product/viewed-product.component"
+import SearchBox from "../searchBox/searchBox.component";
+// import { SearchValue } from "../../contexts/search-contexts/search-contexts";
+// import ViewedProduct from "../viewed-product/viewed-product.component"
 import './shop-directory.style.scss'
 
 
-const ShopDirectory = () => {
+const ShopDirectory = ({children}) => {
 
-    const {allProduct} = useContext(ProductContexts)
-
-    // console.log(shopherodetails)
+   
 
 
     return(
         <div className="shop-directory">
-            <ViewedProduct/>
-            <Services product={allProduct} shop="shop-cont"/>
+        <SearchBox/>
+            <div> 
+          
+            {
+               
+                children.map((hey) =><Services key={hey.id} product={hey.items || hey.itemss} catergories={hey.catergories} shop="shop-cont"/>  )
+            }
+            </div>
+           
+            
         
         
         </div>

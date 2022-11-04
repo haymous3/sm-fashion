@@ -11,6 +11,7 @@ import { CartProvider } from './contexts/cart-contexts/cart-contexts';
 import { MainDashBoardDetailsProvider } from './contexts/cart-card/cart-card.component';
 import { CompareProvider } from './contexts/compare-contexts/compare-context.component';
 import { WalletDetailsProvider } from './contexts/wallet-contects/wallet-context.component';
+import { SearchValueProvider } from './contexts/search-contexts/search-contexts';
 import './index.scss'; 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -24,8 +25,10 @@ root.render(
     <PaymentDetailsContexts>
    
       <NavProvider>
-     
+      <SearchValueProvider>
       <ProductProvider>
+     
+   
         <ImageProvider>
           <HeroProviders>
           <CartProvider>
@@ -42,8 +45,9 @@ root.render(
             </CartProvider>
           </HeroProviders>    
         </ImageProvider>
+       
       </ProductProvider> 
-     
+      </SearchValueProvider>
     </NavProvider>
     </PaymentDetailsContexts>
     </UserProviders>

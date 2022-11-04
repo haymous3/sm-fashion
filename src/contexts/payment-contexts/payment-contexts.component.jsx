@@ -27,7 +27,7 @@ export const PaymentDetailsContexts = ({children}) => {
             
             me = paymentDetailss[hey]
         }
-        console.log(me)
+        // console.log(me)
        
         const totalAmount = me.reduce((start, finish) => {
          let result;
@@ -62,8 +62,8 @@ export const PaymentDetailsContexts = ({children}) => {
 
 //    const totalMe = me.reduce((start, finish) => start + parseInt(finish.amountToPay), 0)
 //    console.log(totalMe)
-    console.log(currentUsers)
-    console.log(amountpaid)
+    // console.log(currentUsers)
+    // console.log(amountpaid)
 
     const value = {paymentDetailss,amountpaid, setAmountPaid}
 
