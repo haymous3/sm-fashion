@@ -7,6 +7,9 @@ import CartDropDown from '../cart-dropdown/cart-dropdown.component'
 import NavDropDown from "../nav-dropdown/nav-dropdown.component";
 import BodyBg from "../body-bg/body-bg.component";
 import { CartContexts } from '../../contexts/cart-contexts/cart-contexts'
+import { OpenReview } from "../../contexts/open-review/open-review.component";
+
+import QuickReview from "../quick-preview-directory/quick-preview-directory.component";
 import { NavContents } from "../../contexts/nav-contexts/nav-contents";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faCartShopping, faBars} from '@fortawesome/free-solid-svg-icons'
@@ -24,6 +27,9 @@ const Navigations = ({navlinks, general}) => {
     const {isCartOpen, setIsCartOpen, quantity} = useContext(CartContexts)
     const {isNavOpen, setIsNavOpen} = useContext(NavContents)
     const {currentUsers,setCurrentUsers, userDetails} = useContext(UserContexts)
+    const {openReview} = useContext(OpenReview)
+
+    // const displayTransferForm = () => setIsTransfer(!isTransfare)
     
     
     
@@ -71,6 +77,10 @@ const Navigations = ({navlinks, general}) => {
         {
             isNavOpen && <NavDropDown/> 
         }
+        {
+           openReview && <QuickReview/> 
+        }
+       
         <BodyBg>
        
             <div className={`${GENERAL_NAV[general]}`}>

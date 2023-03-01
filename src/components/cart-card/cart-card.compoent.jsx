@@ -1,13 +1,28 @@
-// import { useContext } from "react";
-// import { CartContexts } from "../../contexts/cart-contexts/cart-contexts";
+import { useContext, useEffect, useState } from "react"
+
+import { TotalPriceContexts } from "../../contexts/total-price/total-price-context"
 import  {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import './cart-card.styles.scss'
 
 const CartCard = ({maindash, generalWalletProps, func}) => {
    
+    
+    const {totalPriceItem} = useContext(TotalPriceContexts)
     const {cartquantity, name, comparequantity, orderquantity, product} = maindash
     const {icons, amount, walletName, type} = generalWalletProps
     console.log(generalWalletProps)
+
+    const [balance, setBalance] =  useState(0)
+
+
+    useEffect(() => {
+
+        const remainder = () => amount - totalPriceItem;
+
+        setBalance(remainder())
+    }, 
+    
+    [amount, totalPriceItem])
 
     
   
@@ -17,7 +32,7 @@ const CartCard = ({maindash, generalWalletProps, func}) => {
         <div className="cart-card" onClick={func}>
             <FontAwesomeIcon icon={icons}/>
             <h3> {orderquantity || comparequantity || cartquantity} {product} </h3>
-            <h4> {amount}</h4>
+            {  balance ? <h4> {balance}</h4>: null}
             <h4> {type}</h4>
             <h5> {walletName}</h5>
             

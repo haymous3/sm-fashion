@@ -201,15 +201,25 @@ export const AllProduct = [
          'brand': 'Dolce && Gabbana',
          'price': 18.8,
          image: 'bag',
-         icons:faCodeCompare
+         icons:faCodeCompare,
+         style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
       },
       {
          'id': 2,
          'name':'BURBREEY',
          'brand': 'Nike',
-         'price': 18.8,
+         'price': 30.8,
          image: 'shoe',
-         icons:faCodeCompare
+         icons:faCodeCompare,
+         style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
       },
       {
          'id': 3,
@@ -217,7 +227,12 @@ export const AllProduct = [
          'brand': 'Dolce && Gabbana',
          'price': 18.8,
          image: 'glasses',
-         icons:faCodeCompare
+         icons:faCodeCompare,
+         style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
       },
       {
          'id': 4,
@@ -225,7 +240,12 @@ export const AllProduct = [
          'brand': 'Dolce && Gabbana',
          'price': 18.8,
          image: 'browbag',
-         icons:faCodeCompare
+         icons:faCodeCompare,
+         style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
       },
       {
          'id': 5,
@@ -233,7 +253,12 @@ export const AllProduct = [
          'brand': 'Dolce && Gabbana',
          'price': 18.8,
          image: 'jacket',
-         icons:faCodeCompare
+         icons:faCodeCompare,
+         style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
       },
       {
          'id': 6,
@@ -241,7 +266,12 @@ export const AllProduct = [
          'brand': 'Dolce && Gabbana',
          'price': 18.8,
          image: 'browbag',
-         icons:faCodeCompare
+         icons:faCodeCompare,
+         style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
       },
       {
          'id': 7,
@@ -249,7 +279,12 @@ export const AllProduct = [
          'brand': 'Dolce && Gabbana',
          'price': 18.8,
          image: 'glasses',
-         icons:faCodeCompare
+         icons:faCodeCompare,
+         style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
       },
       {
          'id': 8,
@@ -257,7 +292,12 @@ export const AllProduct = [
          'brand': 'Dolce && Gabbana',
          'price': 18.8,
          image: 'shoe',
-         icons:faCodeCompare
+         icons:faCodeCompare,
+         style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
       },
       {
          'id': 9,
@@ -265,7 +305,12 @@ export const AllProduct = [
          'brand': 'Dolce && Gabbana',
          'price': 18.8,
          image: 'bag',
-         icons:faCodeCompare
+         icons:faCodeCompare,
+         style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
       },
    ]
    }, 
@@ -278,7 +323,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'bag',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 2,
@@ -286,7 +336,12 @@ export const AllProduct = [
             'brand': 'Nike',
             'price': 18.8,
             image: 'shoe',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 3,
@@ -294,7 +349,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'glasses',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 4,
@@ -302,7 +362,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'browbag',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 5,
@@ -310,7 +375,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'jacket',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 6,
@@ -318,7 +388,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'browbag',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 7,
@@ -326,7 +401,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'glasses',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 8,
@@ -334,7 +414,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'shoe',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 9,
@@ -342,7 +427,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'bag',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
       ]
    },
@@ -355,7 +445,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'bag',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 2,
@@ -363,7 +458,12 @@ export const AllProduct = [
             'brand': 'Nike',
             'price': 18.8,
             image: 'shoe',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 3,
@@ -371,7 +471,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'glasses',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 4,
@@ -379,7 +484,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'browbag',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+            art_no: 12345678,
+            composition: [
+               'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+            ]
          },
          {
             'id': 5,
@@ -387,7 +497,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'jacket',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 6,
@@ -395,7 +510,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'browbag',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 7,
@@ -403,7 +523,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'glasses',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 8,
@@ -411,7 +536,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'shoe',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 9,
@@ -419,7 +549,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'bag',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
       ]
    },
@@ -432,7 +567,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'bag',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 2,
@@ -440,7 +580,12 @@ export const AllProduct = [
             'brand': 'Nike',
             'price': 18.8,
             image: 'shoe',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 3,
@@ -448,7 +593,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'glasses',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 4,
@@ -456,7 +606,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'browbag',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 5,
@@ -464,7 +619,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'jacket',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 6,
@@ -472,7 +632,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'browbag',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 7,
@@ -480,7 +645,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'glasses',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 8,
@@ -488,7 +658,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'shoe',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 9,
@@ -496,7 +671,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'bag',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
       ]
    },
@@ -509,7 +689,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'bag',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 2,
@@ -517,7 +702,12 @@ export const AllProduct = [
             'brand': 'Nike',
             'price': 18.8,
             image: 'shoe',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 3,
@@ -525,7 +715,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'glasses',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 4,
@@ -533,7 +728,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'browbag',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 5,
@@ -541,7 +741,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'jacket',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 6,
@@ -549,7 +754,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'browbag',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 7,
@@ -557,7 +767,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'glasses',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 8,
@@ -565,7 +780,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'shoe',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 9,
@@ -573,7 +793,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'bag',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
       ]
    },
@@ -586,7 +811,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'bag',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 2,
@@ -594,7 +824,12 @@ export const AllProduct = [
             'brand': 'Nike',
             'price': 18.8,
             image: 'shoe',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 3,
@@ -602,7 +837,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'glasses',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 4,
@@ -610,7 +850,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'browbag',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 5,
@@ -618,7 +863,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'jacket',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 6,
@@ -626,7 +876,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'browbag',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 7,
@@ -634,7 +889,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'glasses',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 8,
@@ -642,7 +902,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'shoe',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
          {
             'id': 9,
@@ -650,7 +915,12 @@ export const AllProduct = [
             'brand': 'Dolce && Gabbana',
             'price': 18.8,
             image: 'bag',
-            icons:faCodeCompare
+            icons:faCodeCompare,
+            style: "Hooded Top",
+         art_no: 12345678,
+         composition: [
+            'Elastic Rib: Cotton 95% ,Elastane 5%', 'Lining : Cotton 100%', 'Cotton 80%, Polyster 20%'
+         ]
          },
       ]
    },

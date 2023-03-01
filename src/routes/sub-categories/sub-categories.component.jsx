@@ -26,6 +26,9 @@ const SubCategory = ({footer, shop,}) => {
         const newEachProduct = eachProduct.filter((hey) => hey.name.toLowerCase().includes(searchValue))
         setFilteredEach(newEachProduct)
     }, [searchValue, eachProduct])
+
+    console.log(eachProduct)
+    console.log(filteredEach)
   
    
     return(

@@ -1,0 +1,69 @@
+.e{
+    display: flex;
+   
+    z-index: 0;
+    justify-content: space-between;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 50px 0px;
+    line-height: 4rem;
+    flex-wrap: wrap;
+
+    :last-child{
+
+        input{
+            height: 10rem;
+            width: 42.5rem;
+
+        }
+
+        input[type="submit"]{
+            background: #fff;
+            margin: 30px 0px;
+            font-size: 15px;
+            font-weight: 700;
+        }
+       
+            
+        
+    }
+
+
+    .multi-input{
+
+        label{
+            font-weight: 700;
+        }
+    
+        input{
+            width: 19rem;
+        height: 2.5rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.3rem 1.525rem -0.375rem rgb(0 0 0 / 10%);
+        border: none;
+    
+    
+       
+        }
+        
+        
+    
+        select{
+            width: 7.5rem;
+        border-radius: 0.5rem;
+        height: 2.5rem;
+        box-shadow: 0 0.3rem 1.525rem -0.375rem rgb(0 0 0 / 10%);
+        border: none;
+        }
+    
+      
+    }
+
+
+}
+
+ 
+ 
+
+
+

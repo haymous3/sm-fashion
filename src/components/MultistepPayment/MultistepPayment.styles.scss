@@ -1,0 +1,74 @@
+
+.multipay{
+    border: 1px solid #eee;
+ height: fit-content;
+    width: 100%;
+
+
+
+    .pay-with-card{
+
+       
+        
+       
+      
+
+
+        .pay-with-card-head{
+            border: 1px solid #eee;
+            height: 3rem;
+            font-size: 15px;
+            font-weight: 700;
+            display: flex;
+        justify-content: space-between;
+        padding: 0px 20px;
+
+        }
+
+        .pay-with-card-body{
+
+            .pay-card-body{
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                padding: 1.5rem 2rem;
+
+                img{
+                    width: 100%;
+                    border-radius: 0.5rem;
+                }
+
+                .multi-input{
+                    input{
+                        height: 3rem !important;
+                        width: 18.5rem !important;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    .pay-with-wallet{
+      
+
+        .pay-with-wallet-head{
+            border: 1px solid #eee;
+            height: 3rem;
+            font-size: 15px;
+            font-weight: 700;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            padding: 0px 20px;
+        }
+
+        .pay-with-wallet-body{
+            transition: all 0.3s ease 10s;
+        }
+
+
+    }
+}

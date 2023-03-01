@@ -1,0 +1,30 @@
+
+
+.payment-with-wallet{
+
+    .amount-balance, .amount-price, .remaining-balance{
+        display: flex;
+        justify-content: space-around;
+        box-shadow: 0 0.3rem 1.525rem -0.375rem rgb(0 0 0 / 10%);
+        margin: 25px auto;
+        width: 75%;
+        font-weight: 700;
+    }
+
+
+    .pay-btn{
+        display: flex;
+        margin: 42px 0px;
+        justify-content: center;
+
+
+        button{
+            padding: 10px 20px;
+            background-color: #fff;
+            font-size: 1rem;
+          border: 1px solid #c92c61;;
+          border-radius: 0.5rem;
+        }
+    }
+   
+}

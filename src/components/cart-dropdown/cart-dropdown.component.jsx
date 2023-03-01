@@ -27,7 +27,7 @@ const CartDropDown = () => {
               cartItems.map((item) => <CartItem key={item.id} cartitem={item}></CartItem>) 
         }
            
-           <Button buttonTypes='checkout' func={goToNavigate}>Go TO CHECKOUT</Button>
+           <Button buttonTypes='checkout' func={goToNavigate}>My Cart</Button>
             
             
            

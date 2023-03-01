@@ -12,6 +12,11 @@ import { MainDashBoardDetailsProvider } from './contexts/cart-card/cart-card.com
 import { CompareProvider } from './contexts/compare-contexts/compare-context.component';
 import { WalletDetailsProvider } from './contexts/wallet-contects/wallet-context.component';
 import { SearchValueProvider } from './contexts/search-contexts/search-contexts';
+import { OpenReviewProvider } from './contexts/open-review/open-review.component';
+import { MultiStepsProvider } from './contexts/multistep-contexts/multistep-contexts';
+import { MultiPaymentProvider } from './contexts/MultiPayment/Multipayment.contexts';
+import { PaymentVerificationProvider } from './contexts/paymentverification/paymentverification.contexts';
+import { TotalPriceProvider } from './contexts/total-price/total-price-context';
 import './index.scss'; 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -32,16 +37,31 @@ root.render(
         <ImageProvider>
           <HeroProviders>
           <CartProvider>
+          <MultiStepsProvider>
+          <PaymentVerificationProvider>
           <CompareProvider>
-          <MainDashBoardDetailsProvider>
-          <WalletDetailsProvider>
+          <TotalPriceProvider>
           
-
-          <App />  
+          <MainDashBoardDetailsProvider>
+          
+          <WalletDetailsProvider>
+          <OpenReviewProvider>
+        <MultiPaymentProvider>
+           <App />
+        </MultiPaymentProvider>
+          
+          
          
+           
+          
+          </OpenReviewProvider>
           </WalletDetailsProvider> 
+         
           </MainDashBoardDetailsProvider> 
+          </TotalPriceProvider>
           </CompareProvider>
+          </PaymentVerificationProvider>
+          </MultiStepsProvider>
             </CartProvider>
           </HeroProviders>    
         </ImageProvider>

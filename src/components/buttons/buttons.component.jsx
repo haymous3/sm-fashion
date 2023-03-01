@@ -11,7 +11,7 @@ export const BUTTON_TYPES = {
 const Button = ({children, buttonTypes, func, type}) => {
 
     return(
-       <button className={`${BUTTON_TYPES[buttonTypes]}`} onClick={func} type={type}>{children}</button>
+       <button className={`${BUTTON_TYPES[buttonTypes]}`} onClick={func}  type={type}>{children}</button>
 
         
     )

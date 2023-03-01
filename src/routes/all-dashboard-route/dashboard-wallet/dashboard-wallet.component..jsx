@@ -18,7 +18,10 @@ const DashBoardWallet = () => {
     
     return(
         <Fragment>
-                {isTransfare && <TransferDetails/>}
+               
+        {
+            isTransfare && <TransferDetails/>
+        }  
             <div className="general-wallet-container">
                 <div className="wallet-heading">
                     {

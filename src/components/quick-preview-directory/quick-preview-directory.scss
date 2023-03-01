@@ -1,0 +1,40 @@
+.quick-preview{
+    
+    transition: all ease 0.5s;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px; 
+    height: 100vh;
+    // z-index: 9999;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.85) none repeat scroll 0 0;
+    // opacity: 0.5;
+    color: white;
+
+    .quick-content{
+        background-color: #fff;
+        height: fit-content;
+        width: 70%;
+        margin: 50px auto;
+       
+        color: black;
+        align-items: center;
+    
+    
+        svg{
+            font-size: 30px;
+        }
+    }
+
+    .quick-preview-head{
+        display: flex;
+        align-items: center;
+        padding: 9px 30px;
+        font-weight: bolder;
+        border-bottom: 1px solid;
+        justify-content: space-between;
+    }
+ 
+}
+
+

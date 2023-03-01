@@ -217,6 +217,50 @@ export const createPaymentProfile =  async (userUid, otherParameters, newpara) =
  return refernceDoc
 } 
 
+// creating the items bought details for all users
+
+export const createBoughtItems =  async (userUid, otherParameters, newpara) => {
+
+  if(!userUid) return;
+
+  
+  const refernceDoc = doc(db, 'itemsbought', userUid)
+  console.log(refernceDoc)
+  const snapshot = await getDoc(refernceDoc)
+  
+  if(!snapshot.exists()){
+ 
+    try{
+     await setDoc(refernceDoc, 
+     {hey: [otherParameters]}
+     
+       
+      )
+    }catch(error){
+      console.log(error)
+    }
+
+    
+  } 
+   if(snapshot.exists() === true){
+ 
+      try{
+       await updateDoc(refernceDoc, 
+      {hey: arrayUnion(otherParameters)}
+       
+         
+        )
+      }catch(error){
+        console.log(error)
+      }
+      
+    }  
+  
+
+ return refernceDoc
+} 
+
+
 // get payment details
 
 export const getPayementDetails = async (userUid) => {
@@ -237,6 +281,28 @@ export const getPayementDetails = async (userUid) => {
 
  
 }
+
+// get items bought details
+
+export const getItemsDetails = async (userUid) => {
+
+  const reference = doc(db, 'itemsbought', userUid)
+
+  const itemsbought = await getDoc(reference);
+
+ 
+
+  try {
+    const theIemsbought = itemsbought.data()
+    console.log(theIemsbought)
+    return theIemsbought;
+  } catch (error) {
+    console.log(error.message)
+  }
+
+ 
+}
+
 
 
 // for logging out

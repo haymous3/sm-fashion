@@ -21,6 +21,11 @@ import BUSH from '../../assets/images/bush.webp'
 import LAPTOP from '../../assets/images/laptop.webp'
 import FOOTERBG from '../../assets/images/footer-bg.webp'
 import ACCESSORIES from '../../assets/images/accessories-bg.webp'
+import CARDONE from '../../assets/images/card1.jpg'
+import CARDTWO from '../../assets/images/card2.jpg'
+import CARDTHREE from '../../assets/images/card3.jpg'
+import CARDFOUR from '../../assets/images/card4.jpg'
+import CARDFIVE from '../../assets/images/card5.jpg'
 
 
 export const ImageContexts = createContext({
@@ -45,7 +50,13 @@ export const ImageContexts = createContext({
     bush:'bush',
     laptop:'laptop',
     footerbg:'footerbg',
-    accessories:'accessories'
+    accessories:'accessories',
+    cardone:'cardone',
+    cardtwo:'cardtwo',
+    cardthree:'cardthree',
+    cardfour:'cardfour',
+    cardfive:'cardfive',
+
 
     
 })
@@ -75,11 +86,16 @@ export const ImageProvider = ({children}) => {
     const[laptop] = useState(LAPTOP);
     const[footerbg] = useState(FOOTERBG);
     const[accessories] = useState(ACCESSORIES)
+    const[cardone] = useState(CARDONE)
+    const[cardtwo] = useState(CARDTWO)
+    const[cardthree] = useState(CARDTHREE)
+    const[cardfOur] = useState(CARDFOUR)
+    const[cardfive] = useState(CARDFIVE)
   
 
 
 
-    const value ={banner,sectionbanner,bag, shoe, glasses, browbag, women, jacket, jean, bata, cog, headphone, plane,rotate, footerlogo, payment, goat, people, bush, laptop, footerbg, accessories}
+    const value ={banner,sectionbanner,bag, shoe, glasses, browbag, women, jacket, jean, bata, cog, headphone, plane,rotate, footerlogo, payment, goat, people, bush, laptop, footerbg, accessories, cardone, cardtwo, cardthree, cardfOur, cardfive}
 
 
     return <ImageContexts.Provider value={value}>{children}</ImageContexts.Provider>

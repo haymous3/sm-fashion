@@ -14,6 +14,16 @@ const addToCart = (cartitems, product) => {
 alert('Added to cart')
 return [...cartitems, {...product, quantity: 1}]
 }
+const reviews = (cartitems, product) => {
+  const existingProduct = cartitems.find((item) => item.id === product.id)
+
+  if(existingProduct){
+    return cartitems.map((item) => item.id === product.id ? 
+    {...item, quantity : item.quantity + 1}: item )
+  }
+
+return [ {...product, quantity: 1}]
+}
 
 const increaseProduct = (cartitems, product) => {
   const existingProduct = cartitems.find((item) => item.id === product.id)
@@ -53,7 +63,9 @@ export const CartContexts = createContext({
     clearProducts: () => {},
     totalprice: 0,
     setTotalPrice: () => {},
-    clearAllCart: () => {}
+    clearAllCart: () => {},
+    newreiew: () => {},
+    review: []
 
 })
 
@@ -62,7 +74,9 @@ export const CartProvider = ({children}) => {
     const [isCartOpen, setIsCartOpen] = useState(false)
     const [cartItems, setCartItems] = useState([])
     const [quantity, setQuantity] = useState(0)
+    
     const [totalprice, setTotalPrice] = useState(0)
+    const [review, setReview] = useState([])
 
  
     const {currentUsers} = useContext(UserContexts)
@@ -99,6 +113,15 @@ export const CartProvider = ({children}) => {
       console.log(cartItems)
     }
 
+    
+  
+        const newreiew = (product) => {
+          setReview(reviews(cartItems, product))
+        }
+        
+
+    
+
     const increaseProducts =(product) => {
       setCartItems(increaseProduct(cartItems, product))
     }
@@ -111,8 +134,8 @@ export const CartProvider = ({children}) => {
     }
     const clearAllCart = () => setCartItems([])
     
-    console.log(cartItems)
-    const value ={isCartOpen, setIsCartOpen, cartItems, addToMyCart, quantity, increaseProducts,decreaseProducts,clearProducts,totalprice, clearAllCart}
+    console.log(review)
+    const value ={isCartOpen, setIsCartOpen, cartItems, addToMyCart, quantity, increaseProducts,decreaseProducts,clearProducts,totalprice, clearAllCart, newreiew,review}
 
 
 

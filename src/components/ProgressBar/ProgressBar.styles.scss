@@ -1,0 +1,36 @@
+.step{
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    // padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    font-weight: 700;
+    border-radius: 50%;
+
+
+    p{
+        position: absolute;
+        top: 30px;
+       
+        color: #000;
+    }
+    &.completed{
+        background-color: #c92c61;
+        color: white;
+
+        p{
+            color: white;
+            font-size: 15px;
+        }
+    }
+
+
+
+   
+}
+

@@ -1,4 +1,5 @@
-// import { useContext } from "react";
+
+
 // import { ProductContexts } from "../../contexts/product-contexts/product-contexts";
 import Services from "../services/services.component"
 import SearchBox from "../searchBox/searchBox.component";
@@ -9,24 +10,33 @@ import './shop-directory.style.scss'
 
 const ShopDirectory = ({children}) => {
 
+    
+
+
    
 
 
     return(
-        <div className="shop-directory">
-        <SearchBox/>
-            <div> 
-          
-            {
-               
-                children.map((hey) =><Services key={hey.id} product={hey.items || hey.itemss} catergories={hey.catergories} shop="shop-cont"/>  )
-            }
-            </div>
-           
+        
+        
+            <div className="shop-directory">
+            <SearchBox/>
             
+                <div> 
+            
+                {
+                
+                    children.map((hey) =><Services key={hey.id} product={hey.items || hey.itemss} catergories={hey.catergories} shop="shop-cont"/>  )
+                }
+                </div>
+            
+                
+            
+            
+            </div>
         
-        
-        </div>
+       
+       
     )
 }
 
